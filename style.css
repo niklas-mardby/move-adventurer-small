@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /*margin: 0;
+  padding: 0;*/
 }
 
 body {
@@ -18,7 +20,7 @@ footer {
 }
 
 .wrapper {
-  width: 500px;
+  width: min-content;
 }
 
 h1,
@@ -32,6 +34,13 @@ footer {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 nav {
@@ -42,7 +51,7 @@ nav {
     ".... north ...."
     "west ..... east"
     ".... south ....";
-  padding: 7px;
+  padding: 7px 12px;
 }
 
 .up {
@@ -64,9 +73,27 @@ button {
   background-color: #adff2f;
   font-weight: bold;
   font-size: large;
-  padding: 7px 10px;
+  padding: 7px 12px;
+  height: max-content;
 }
 
 footer {
   padding: 5px 0px 5px;
+}
+
+main {
+  padding: 7px 12px;
+  margin-right: 7px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.cell {
+  border: solid 1px black;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
