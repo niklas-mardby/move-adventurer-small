@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,
+main,
+nav,
+footer {
+  border: 2px solid brown;
+  border-radius: 6px;
+}
+
+.wrapper {
+  width: 500px;
+}
+
+h1,
+footer {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    ".... north ...."
+    "west ..... east"
+    ".... south ....";
+  padding: 7px;
+}
+
+.up {
+  grid-area: north;
+}
+.down {
+  grid-area: south;
+}
+.left {
+  grid-area: west;
+}
+.right {
+  grid-area: east;
+}
+
+button {
+  border: solid 1px darkgreen;
+  border-radius: 5px;
+  background-color: #adff2f;
+  font-weight: bold;
+  font-size: large;
+  padding: 7px 10px;
+}
+
+footer {
+  padding: 5px 0px 5px;
+}
