@@ -10,8 +10,6 @@ const Hero = {
   y: 2,
 };
 
-// &#x1F920;
-
 const mainElement = document.querySelector("main");
 
 for (let i = 0; i < World.height; i++) {
@@ -21,6 +19,10 @@ for (let i = 0; i < World.height; i++) {
     let c = document.createElement("div");
     c.className = "cell";
     r.append(c);
+
+    if (i === Hero.y && j === Hero.x) {
+      c.innerHTML = "&#x1F920;";
+    }
   }
   mainElement.append(r);
 }
