@@ -24,14 +24,14 @@ Do as many as you want in any order!
 1. Where in the code is the start position of the adventurer set? Change start position. Test to make sure your changes works.
 2. Can you change the size of the map?
 3. Can you change the adventurer emoji?
-   X. There is a bug in the code. Find it and fix it.
+4. There is a bug in the code. Find it and fix it.
 
 ### Hints
 
 1. There is an object literal with all the properties of the adventurer
 2. There is an object literal with the properties for the world.
 3. See 2 above.
-   X. The bug in the code can be found by opening the html file in your browser and playing around with the move buttons. The bug is fixed by adding to the move functions so that movement is limited to the size of the World.
+4. The bug in the code can be found by opening the html file in your browser and playing around with the move buttons. The bug is fixed by adding to the move functions so that movement is limited to the size of the map.
 
 ## Further Development
 
